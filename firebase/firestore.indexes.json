@@ -1,0 +1,60 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "comments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "post_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "time_posted",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "acc_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "contribution_points",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "notifications",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "receiver",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "time_posted",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "notifications",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "seen",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "time_posted",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ]
+}
